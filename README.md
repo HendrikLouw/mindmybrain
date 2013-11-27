@@ -11,10 +11,16 @@ association](http://webspace.ship.edu/cgboer/genpsylearning.html)
 To aid in learning this should allow for quick and easy adding of any
 kind of media
   * Text
+    ```
+    house :"is built by" bricks
+    <<house>> -is built by-> <<bricks>>
+    house :"is a" building
+    <<house>> -is a-> <<building>>
+    ```
   * Pictures
   * Video
   * Audio
-  * Links
+  * Web Links
 
 
 Ideally the app should try to have some intelligence by:
