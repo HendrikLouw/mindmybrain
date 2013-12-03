@@ -5,6 +5,10 @@
  */
 App.TopicLink = DS.Model.extend({
   name: DS.attr('string'),
-  origin_topic: DS.attr('integer'), //The ID of the from topic
-  destination_topic: DS.attr('integer'), // The ID of the to topic
+  originTopic: DS.attr('integer'), //The ID of the from topic
+  destinationTopic: DS.attr('integer'), // The ID of the to topic
 });
+
+
+App.TopicLink.FIXTURES = [
+]

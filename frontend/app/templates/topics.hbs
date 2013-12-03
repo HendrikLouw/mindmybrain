@@ -1,5 +1,5 @@
 {{#each}}
-  {{name}}
+  {{render "topic" this}}
 {{/each}}
 
 {{input type="text" id="new-topic" placeholder="New Topic" value=newTopicName action="createTopic"}}
