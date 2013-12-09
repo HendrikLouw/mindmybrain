@@ -14,6 +14,21 @@
     <script>var expect = chai.expect</script>
 
     <!-- include source files here... -->
+   
+        <!-- build:js scripts/components.js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/handlebars/handlebars.runtime.js"></script>
+        <script src="bower_components/ember/ember.js"></script>
+        <script src="bower_components/ember-data-shim/ember-data.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js(.tmp) scripts/templates.js -->
+        <script src="scripts/compiled-templates.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js(.tmp) scripts/main.js -->
+        <script src="scripts/combined-scripts.js"></script>
+        <!-- endbuild -->
 
     <!-- include spec files here... -->
     <script src="spec/test.js"></script>

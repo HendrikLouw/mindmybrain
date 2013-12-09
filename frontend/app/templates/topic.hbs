@@ -1,6 +1,8 @@
 <div class="topic">
-  {{name}}
-  {{input type="text" id="new-link-origin-topic" placeholder="Origin Topic" value=id action="createTopicLink"}}
-  {{input type="text" id="new-link-name" placeholder="New Link Name" value=newLinkName action="createTopicLink"}}
-  {{input type="text" id="new-link-destination-topic" placeholder="Destination Topic" value=destinationTopic action="createTopicLink"}}
+  <h2>{{name}}</h2>
+
+  {{input type="text" placeholder="Origin Topic" value=id action="createTopicLink"}}
+  {{input type="text" placeholder="New Link Name" value=newName action="createTopicLink"}}
+  {{input type="text" placeholder="Destination Topic" value=destination action="createTopicLink"}}
+
 </div>

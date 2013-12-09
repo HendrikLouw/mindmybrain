@@ -1,18 +1,18 @@
 App.TopicController = Ember.ObjectController.extend({
   actions: {
     createTopicLink: function() {
-      var originTopic = this.get('id');
-      var linkName = this.get('newLinkName');
-      var destinationTopic = this.get('destinationTopic');
+      var origin = this.get('id');
+      var name = this.get('newName');
+      var destination = this.get('destination');
       
       var link = this.store.createRecord('topic_link', {
+        origin: origin,
         name: name,
-        origin_topic: originTopic,
-        destination_topic: destinationTopic 
+        destination: destination 
       });
-      this.set('newLinkName', '');
-      this.set('originTopic', '');
-      this.set('destinationTopic', '');
+      this.set('newName', '');
+      this.set('origin', '');
+      this.set('destination', '');
       link.save();
     }
   }
